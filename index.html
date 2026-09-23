@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>マネー家計簿 サポート</title>
+<meta name="description" content="マネー家計簿｜予算管理のサポートページ。よくある質問とお問い合わせ先。">
+<style>
+:root{
+  --paper:#F5F6F1;
+  --surface:#FFFFFF;
+  --surface-2:#EEF1EB;
+  --ink:#1B231F;
+  --muted:#66756D;
+  --line:#D9DFD8;
+  --line-strong:#C3CCC1;
+  --accent:#2E6F5C;
+  --accent-ink:#F5F6F1;
+  --accent-soft:#E2EFE8;
+  --font-head:'Zen Kaku Gothic New',"Hiragino Sans",sans-serif;
+  --font-body:'Noto Sans JP',"Hiragino Sans",sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#12160F;
+    --surface:#181D16;
+    --surface-2:#1E241C;
+    --ink:#E8ECE3;
+    --muted:#98A395;
+    --line:#2A312A;
+    --line-strong:#3A4438;
+    --accent:#79C7A8;
+    --accent-ink:#0D1712;
+    --accent-soft:#1B2D26;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#12160F;
+  --surface:#181D16;
+  --surface-2:#1E241C;
+  --ink:#E8ECE3;
+  --muted:#98A395;
+  --line:#2A312A;
+  --line-strong:#3A4438;
+  --accent:#79C7A8;
+  --accent-ink:#0D1712;
+  --accent-soft:#1B2D26;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font-body);
+  line-height:1.75;
+  padding-inline:20px;
+}
+.wrap{max-width:640px;margin:0 auto;padding-block:40px 80px;}
+
+h1,h2{font-family:var(--font-head);font-weight:700;text-wrap:balance;}
+h1{font-size:1.6rem;margin:0;}
+h2{font-size:1.05rem;margin:0 0 14px;display:flex;align-items:center;gap:8px;}
+p{margin:0 0 10px;}
+
+header{display:flex;align-items:center;gap:14px;margin-bottom:8px;}
+.icon{
+  width:52px;height:52px;border-radius:14px;
+  background:var(--surface-2);
+  display:flex;align-items:center;justify-content:center;
+  flex:none;
+}
+.icon svg{width:32px;height:32px;}
+.eyebrow{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px;}
+
+.lede{color:var(--muted);font-size:.95rem;margin:20px 0 36px;max-width:52ch;}
+
+section{padding-block:28px;border-top:1px solid var(--line);}
+section:first-of-type{border-top:none;padding-top:0;}
+
+.qa{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:16px 18px;
+  margin-bottom:12px;
+}
+.qa .q{font-weight:600;font-size:.95rem;margin:0 0 6px;display:flex;gap:10px;}
+.qa .q .mark{font-family:var(--font-mono);color:var(--accent);flex:none;}
+.qa .a{color:var(--muted);font-size:.9rem;margin:0;padding-left:26px;}
+
+.contact-card{
+  background:var(--accent-soft);
+  border:1px solid var(--line);
+  border-left:3px solid var(--accent);
+  border-radius:10px;
+  padding:20px;
+}
+.contact-card p{color:var(--ink);font-size:.9rem;margin-bottom:14px;}
+.email-row{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:10px 14px;
+}
+.email-row span{font-family:var(--font-mono);font-size:.92rem;user-select:all;}
+.copy-btn{
+  font-family:var(--font-body);
+  font-size:.8rem;font-weight:600;
+  background:var(--accent);color:var(--accent-ink);
+  border:none;border-radius:100px;
+  padding:6px 14px;cursor:pointer;
+  margin-left:auto;
+}
+.copy-btn:active{opacity:.85;}
+.note{font-size:.8rem;color:var(--muted);margin-top:10px;}
+
+footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.78rem;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">Support</p>
+  <header>
+    <div class="icon">
+      <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <rect x="222" y="322" width="580" height="400" rx="72" fill="#1E4A3C"/>
+        <path d="M 222 452 L 802 452" stroke="#123024" stroke-width="10" stroke-linecap="round"/>
+        <circle cx="742" cy="512" r="92" fill="#E7A947"/>
+        <text x="742" y="552" font-family="Hiragino Sans" font-size="118" font-weight="700" fill="#1E4A3C" text-anchor="middle">¥</text>
+      </svg>
+    </div>
+    <h1>マネー家計簿｜予算管理 サポート</h1>
+  </header>
+
+  <p class="lede">「今期、あといくら使えるか」が一目で分かる家計簿アプリです。使い方で分からないことがあれば、下のよくある質問をご確認いただくか、メールでお問い合わせください。</p>
+
+  <section>
+    <h2>よくある質問</h2>
+
+    <div class="qa">
+      <p class="q"><span class="mark">Q.</span> 入力したデータはどこに保存されますか？</p>
+      <p class="a">お使いの端末内にのみ保存されます。外部のサーバーに送信することはありません。</p>
+    </div>
+
+    <div class="qa">
+      <p class="q"><span class="mark">Q.</span> 銀行口座やクレジットカードと連携できますか？</p>
+      <p class="a">連携はしていません。現金・カード・電子マネーなど、支払い方法にかかわらずご自身で金額を入力していただく仕組みです。</p>
+    </div>
+
+    <div class="qa">
+      <p class="q"><span class="mark">Q.</span> 機種変更したときにデータは引き継げますか？</p>
+      <p class="a">現在のバージョンでは端末内保存のみですが、今後のアップデートでiCloud同期に対応予定です。対応後は、同じApple IDでサインインした端末間でデータが自動的に同期されるようになります。現時点では機種変更の際にデータは引き継がれませんので、ご注意ください。</p>
+    </div>
+
+    <div class="qa">
+      <p class="q"><span class="mark">Q.</span> Pro（¥1,000）を購入したのに反映されません。</p>
+      <p class="a">「設定」タブ内の「購入を復元」をタップしてください。同じApple IDでの購入状況が再度確認されます。</p>
+    </div>
+
+    <div class="qa">
+      <p class="q"><span class="mark">Q.</span> アプリを削除したら、購入した内容も消えますか？</p>
+      <p class="a">消えません。購入はApple IDに紐づいているため、再インストール後に「購入を復元」をタップすれば元に戻ります。</p>
+    </div>
+
+    <div class="qa">
+      <p class="q"><span class="mark">Q.</span> 不具合の報告や機能のご要望はどこに送ればいいですか？</p>
+      <p class="a">下記のメールアドレスまでご連絡ください。できるだけ具体的に状況を書いていただけると助かります。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <div class="contact-card">
+      <p>不具合の報告、ご意見・ご要望など、お気軽にご連絡ください。</p>
+      <div class="email-row">
+        <span id="support-email">yoshi.mac20@icloud.com</span>
+        <button class="copy-btn" id="copy-btn" type="button">コピー</button>
+      </div>
+      <p class="note">メールアプリが開かない場合は、上のアドレスをコピーしてご利用のメールアプリに貼り付けてください。</p>
+    </div>
+  </section>
+
+  <footer>マネー家計簿｜予算管理</footer>
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById('copy-btn');
+  var text = document.getElementById('support-email');
+  if (!btn || !text) return;
+  btn.addEventListener('click', function () {
+    var value = text.textContent.trim();
+    function fallback() {
+      try {
+        var range = document.createRange();
+        range.selectNodeContents(text);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+      } catch (e) {}
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(value).then(function () {
+        btn.textContent = 'コピーしました';
+        setTimeout(function () { btn.textContent = 'コピー'; }, 1600);
+      }).catch(fallback);
+    } else {
+      fallback();
+    }
+  });
+})();
+</script>
+</body>
+</html>
